@@ -1,8 +1,8 @@
-# MyLuna Architecture and Requirements
+# Kipzo Architecture and Requirements
 
 ## Purpose
 
-MyLuna is an iPhone-based prototype for a LEGO-powered face-following robot.
+Kipzo is an iPhone-based prototype for a LEGO-powered face-following robot.
 
 The current version is intentionally small in scope:
 - use the iPhone front camera
@@ -42,7 +42,7 @@ It is currently a rotating face-following prototype.
 
 ### 1. App Entry Layer
 **Files**
-- `MyLunaApp.swift`
+- `KipzoApp.swift`
 - `OrientationLock.swift`
 
 **Responsibilities**

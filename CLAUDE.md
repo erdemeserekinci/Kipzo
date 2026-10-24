@@ -1,33 +1,33 @@
 # CLAUDE.md
 
-Bu dosya, MyLuna deposunda çalışan Claude (ve diğer kod asistanları) için yol göstericidir.
-Ayrıntılı ürün gereksinimleri `MyLuna/Agents.md` içindedir; ancak o belge **tek motorlu ilk
+Bu dosya, Kipzo deposunda çalışan Claude (ve diğer kod asistanları) için yol göstericidir.
+Ayrıntılı ürün gereksinimleri `Kipzo/Agents.md` içindedir; ancak o belge **tek motorlu ilk
 prototipi** anlatır ve kodun bugünkü hâlinin gerisinde kalmıştır. Çelişki olduğunda bu dosya
 ve kodun kendisi esas alınır.
 
 ## Proje özeti
 
-MyLuna, iPhone ön kamerasıyla yüz algılayıp LEGO WeDo 2.0 hub'ına (BLE) bağlı motorlarla
+Kipzo (eski adı: MyLuna), iPhone ön kamerasıyla yüz algılayıp LEGO WeDo 2.0 hub'ına (BLE) bağlı motorlarla
 yüzü takip eden bir robot prototipidir. Ekranda alev gözlü bir "robot yüzü" gösterilir,
 yüz yakalandığında robot kısa bir selam söyler.
 
 - Platform: iOS (SwiftUI + UIKit köprüsü), yalnızca yatay (landscape)
-- Deployment target: iOS 26.0 · Swift 5 dil modu · Bundle ID: `edu.ates.MyLuna`
+- Deployment target: iOS 26.0 · Swift 5 dil modu · Bundle ID: `edu.ates.Kipzo`
 - Harici bağımlılık yok (SPM/CocoaPods yok); yalnızca AVFoundation, CoreBluetooth, SwiftUI
 - Test hedefi yok
 
 ## Derleme ve çalıştırma
 
-- `MyLuna.xcodeproj` dosyasını Xcode ile açın, `MyLuna` şemasını **fiziksel bir iPhone**'da
+- `Kipzo.xcodeproj` dosyasını Xcode ile açın, `Kipzo` şemasını **fiziksel bir iPhone**'da
   çalıştırın. Simülatörde ön kamera ve BLE olmadığı için uygulama "Waiting for WeDo
   connection..." ekranında kalır.
 - Komut satırından derleme kontrolü:
-  `xcodebuild -project MyLuna.xcodeproj -scheme MyLuna -destination 'generic/platform=iOS' build`
+  `xcodebuild -project Kipzo.xcodeproj -scheme Kipzo -destination 'generic/platform=iOS' build`
 - Kamera ve Bluetooth izin metinleri `project.pbxproj` içindeki `INFOPLIST_KEY_*`
   ayarlarındadır (ayrı bir Info.plist yok).
-- Proje `fileSystemSynchronizedGroups` kullanır: `MyLuna/` klasörüne konan **her dosya
+- Proje `fileSystemSynchronizedGroups` kullanır: `Kipzo/` klasörüne konan **her dosya
   otomatik olarak hedefe eklenir**. Yeni Swift dosyası eklemek için pbxproj düzenlemeye gerek
-  yoktur; buna karşılık not/belge dosyalarını `MyLuna/` içine koymayın (uygulama paketine
+  yoktur; buna karşılık not/belge dosyalarını `Kipzo/` içine koymayın (uygulama paketine
   kopyalanırlar).
 
 ## Mimari
@@ -51,7 +51,7 @@ CameraPreviewView (debug)                     ├─ .tankDrive / .stopMotor ─
 
 | Dosya | Katman | Sorumluluk |
 |---|---|---|
-| `MyLunaApp.swift`, `OrientationLock.swift` | Giriş | Uygulamayı başlatır, landscape kilidini `AppDelegate` üzerinden uygular |
+| `KipzoApp.swift`, `OrientationLock.swift` | Giriş | Uygulamayı başlatır, landscape kilidini `AppDelegate` üzerinden uygular |
 | `ContentView.swift` | Orkestrasyon | WeDo `.ready` olunca kamerayı başlatır, 350 ms'lik tick döngüsü, action executor |
 | `FaceTracker.swift` | Kamera/Görü | `AVCaptureSession` + `AVCaptureMetadataOutput` (.face); `turnSignal`, `driveSignal`, `detectedFaceBounds` yayınlar; `CameraPreviewView`/`PreviewUIView` yeşil yüz kutusunu çizer |
 | `RobotEvent.swift` | Model | Ham sinyalden türetilen semantik olaylar (faceAcquired, faceLost, faceCentered, faceOffLeft/Right, ble*) |

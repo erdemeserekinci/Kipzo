@@ -7,26 +7,26 @@
 	objects = {
 
 /* Begin PBXFileReference section */
-		2FA198D02F61EF4F00F6C669 /* MyLuna.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyLuna.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		2FA198D02F61EF4F00F6C669 /* Kipzo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Kipzo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		2FCEB5E82F6D6DE5002EB397 /* Exceptions for "MyLuna" folder in "MyLuna" target */ = {
+		2FCEB5E82F6D6DE5002EB397 /* Exceptions for "Kipzo" folder in "Kipzo" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Agents.md,
 			);
-			target = 2FA198CF2F61EF4F00F6C669 /* MyLuna */;
+			target = 2FA198CF2F61EF4F00F6C669 /* Kipzo */;
 		};
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		2FA198D22F61EF4F00F6C669 /* MyLuna */ = {
+		2FA198D22F61EF4F00F6C669 /* Kipzo */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
 			exceptions = (
-				2FCEB5E82F6D6DE5002EB397 /* Exceptions for "MyLuna" folder in "MyLuna" target */,
+				2FCEB5E82F6D6DE5002EB397 /* Exceptions for "Kipzo" folder in "Kipzo" target */,
 			);
-			path = MyLuna;
+			path = Kipzo;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -45,7 +45,7 @@
 		2FA198C72F61EF4F00F6C669 = {
 			isa = PBXGroup;
 			children = (
-				2FA198D22F61EF4F00F6C669 /* MyLuna */,
+				2FA198D22F61EF4F00F6C669 /* Kipzo */,
 				2FA198D12F61EF4F00F6C669 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -53,7 +53,7 @@
 		2FA198D12F61EF4F00F6C669 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				2FA198D02F61EF4F00F6C669 /* MyLuna.app */,
+				2FA198D02F61EF4F00F6C669 /* Kipzo.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -61,9 +61,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		2FA198CF2F61EF4F00F6C669 /* MyLuna */ = {
+		2FA198CF2F61EF4F00F6C669 /* Kipzo */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 2FA198DB2F61EF5300F6C669 /* Build configuration list for PBXNativeTarget "MyLuna" */;
+			buildConfigurationList = 2FA198DB2F61EF5300F6C669 /* Build configuration list for PBXNativeTarget "Kipzo" */;
 			buildPhases = (
 				2FA198CC2F61EF4F00F6C669 /* Sources */,
 				2FA198CD2F61EF4F00F6C669 /* Frameworks */,
@@ -74,13 +74,13 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				2FA198D22F61EF4F00F6C669 /* MyLuna */,
+				2FA198D22F61EF4F00F6C669 /* Kipzo */,
 			);
-			name = MyLuna;
+			name = Kipzo;
 			packageProductDependencies = (
 			);
-			productName = MyLuna;
-			productReference = 2FA198D02F61EF4F00F6C669 /* MyLuna.app */;
+			productName = Kipzo;
+			productReference = 2FA198D02F61EF4F00F6C669 /* Kipzo.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -98,7 +98,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 2FA198CB2F61EF4F00F6C669 /* Build configuration list for PBXProject "MyLuna" */;
+			buildConfigurationList = 2FA198CB2F61EF4F00F6C669 /* Build configuration list for PBXProject "Kipzo" */;
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -112,7 +112,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				2FA198CF2F61EF4F00F6C669 /* MyLuna */,
+				2FA198CF2F61EF4F00F6C669 /* Kipzo */,
 			);
 		};
 /* End PBXProject section */
@@ -280,7 +280,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.ates.MyLuna;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ates.Kipzo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -315,7 +315,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = edu.ates.MyLuna;
+				PRODUCT_BUNDLE_IDENTIFIER = edu.ates.Kipzo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				STRING_CATALOG_GENERATE_SYMBOLS = YES;
 				SWIFT_APPROACHABLE_CONCURRENCY = YES;
@@ -330,7 +330,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		2FA198CB2F61EF4F00F6C669 /* Build configuration list for PBXProject "MyLuna" */ = {
+		2FA198CB2F61EF4F00F6C669 /* Build configuration list for PBXProject "Kipzo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2FA198D92F61EF5300F6C669 /* Debug */,
@@ -339,7 +339,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		2FA198DB2F61EF5300F6C669 /* Build configuration list for PBXNativeTarget "MyLuna" */ = {
+		2FA198DB2F61EF5300F6C669 /* Build configuration list for PBXNativeTarget "Kipzo" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				2FA198DC2F61EF5300F6C669 /* Debug */,

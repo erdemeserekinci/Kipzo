@@ -1,6 +1,6 @@
 import SwiftUI
 
-/// The main entry point of the MyLuna application.
+/// The main entry point of the Kipzo application.
 ///
 /// This app is intentionally locked to landscape orientation because the
 /// robot control experience is designed around a fixed horizontal phone mount.
@@ -10,7 +10,7 @@ import SwiftUI
 /// - Attach the UIKit-backed app delegate
 /// - Apply the landscape orientation lock to the root view
 @main
-struct MyLunaApp: App {
+struct KipzoApp: App {
     /// Bridges UIKit app lifecycle hooks into this SwiftUI app.
     @UIApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
